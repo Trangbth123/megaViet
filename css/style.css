@@ -471,6 +471,13 @@ span {
   color: #fff;
 }
 
+.count-number {
+  display: flex;
+}
+.count-number .counter {
+  color: #F58220;
+}
+
 .handbook {
   background: url(../img/z5758444397473_97ae61b80bbe9008e9363f512235000c.jpg);
   background-size: cover;
@@ -1369,7 +1376,7 @@ span {
 }
 .about-detail-new .left-about {
   height: 42px;
-  width: 90%;
+  width: 95%;
   background-color: #fff;
   border-radius: 5px;
   position: relative;
@@ -1390,7 +1397,7 @@ span {
 }
 .about-detail-new .right-about {
   height: 42px;
-  width: 90%;
+  width: 95%;
   background-color: #fff;
   border-radius: 5px;
   position: relative;
@@ -1408,4 +1415,44 @@ span {
   position: absolute;
   background-color: #0066B3;
   height: 42px;
+}
+
+.accordion {
+  position: relative;
+}
+.accordion::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #C5C5C5;
+  right: -1px;
+  top: 0;
+}
+.accordion .accordion-header .accordion-button {
+  background-color: aliceblue;
+  display: flex;
+  gap: 10px;
+  color: #0066B3;
+  font-size: 16px;
+  font-weight: 700;
+}
+.accordion .accordion-header .accordion-button i {
+  color: #0066B3;
+}
+
+.box-main {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  padding: 40px 30px;
+  border: 1px solid #0066B3;
+}
+.box-main .title-box {
+  font-size: 16px;
+  font-weight: 700;
+}
+.box-main .body-box {
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

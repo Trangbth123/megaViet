@@ -289,7 +289,8 @@
                         <img src="../img/box1.png" alt="">
                         <div class="card-body">
                             <div class="count-number py-2">
-                                12+
+                                <span class="counter">12</span>
+                                +
                             </div>
                             <div class="count-sub">
                                 Năm hình thành và phát triển
@@ -302,7 +303,8 @@
                         <img src="../img/box2.png" alt="">
                         <div class="card-body">
                             <div class="count-number py-2">
-                                100+
+                                <span class="counter">100</span>
+                                +
                             </div>
                             <div class="count-sub">
                                 Chuyên gia, bác sĩ thú y hàng đầu
@@ -315,7 +317,8 @@
                         <img src="../img/box3.png" alt="">
                         <div class="card-body">
                             <div class="count-number py-2">
-                                300+
+                                <span class="counter">300</span>
+                                +
                             </div>
                             <div class="count-sub">
                                 Sản phẩm thuốc thú y chất lượng
@@ -328,7 +331,8 @@
                         <img src="../img/box4.png" alt="">
                         <div class="card-body">
                             <div class="count-number py-2">
-                                5000+
+                                <span class="counter">5000</span>
+                                +
                             </div>
                             <div class="count-sub">
                                 Hệ thống khách hàng
@@ -1089,6 +1093,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -1104,6 +1110,10 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         AOS.init();
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10
+        });
         $('.banner').slick({
             dots: false,
             infinite: true,

@@ -568,6 +568,13 @@ span {
     }
 }
 
+.count-number{
+    display: flex;
+    .counter{
+        color: $orange;
+    }
+}
+
 .handbook {
     background: url(../img/z5758444397473_97ae61b80bbe9008e9363f512235000c.jpg);
     background-size: cover;
@@ -1640,7 +1647,7 @@ span {
 
     .left-about {
         height: 42px;
-        width: 90%;
+        width: 95%;
         background-color: #fff;
         border-radius: 5px;
         position: relative;
@@ -1663,7 +1670,7 @@ span {
 
     .right-about {
         height: 42px;
-        width: 90%;
+        width: 95%;
         background-color: #fff;
         border-radius: 5px;
         position: relative;
@@ -1682,5 +1689,57 @@ span {
             background-color: $blue;
             height: 42px;
         }
+    }
+}
+
+.accordion{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #C5C5C5;
+        right: -1px;
+        top: 0;
+    }
+    .accordion-header{
+        .accordion-button{
+            background-color: aliceblue;
+            display: flex;
+            gap: 10px;
+            color: $blue;
+            font-size: 16px;
+            font-weight: 700;
+            i{
+                color: $blue;
+            }
+        }
+    }
+}
+.box-main{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    padding: 40px 30px;
+    border: 1px solid $blue;
+    .title-box{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .body-box{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.accordion-item{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $blue;
+        
     }
 }
